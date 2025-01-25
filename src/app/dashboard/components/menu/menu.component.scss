@@ -1,0 +1,19 @@
+
+::ng-deep .p-panelmenu .p-panelmenu-panel{
+    margin-bottom: 0 !important;
+}
+::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content{
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+::ng-deep .p-panelmenu .p-menuitem-text{
+    font-size: 14px !important;
+}
+::ng-deep .p-panelmenu .p-panelmenu-content{
+    border-radius: 0 !important;
+    border: 0 !important;
+}
+::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action{
+    color: #333 !important;
+}

@@ -1,0 +1,25 @@
+<p-menubar>
+    <ng-template pTemplate="start">
+        <!-- <img src="../../assets/images/logo.png" height="40" class="mr-2" /> -->
+    </ng-template>
+    <ng-template pTemplate="end">
+        <p-button type="button" [rounded]="true" [text]="true" [raised]="true" class="mr-2 btn-white" (click)="sidebarVisible4 = true" icon="pi pi-ellipsis-v"></p-button>
+        <p-sidebar [(visible)]="sidebarVisible4" position="right">
+            <p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '360px' }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+                </ng-template>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
+                    quas!
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="text-center">
+                        <p-button label="Cerrar sesión" icon="pi pi-fw pi-power-off"></p-button>
+                    </div>
+                    <!-- <p-button label="Cancelar" icon="pi pi-times" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button> -->
+                </ng-template>
+            </p-card>
+        </p-sidebar>
+    </ng-template>
+</p-menubar>

@@ -1,0 +1,16 @@
+<section class="dashboard flex flex-row h-screen">
+    <div class="menu card flex justify-content-left flex-column col-1 h-full">
+        <app-menu></app-menu>
+    </div>
+    <div class="main__content flex flex-column col-11 p-0">
+        <div class="w-full">
+            <app-header></app-header>
+        </div>
+        <div class="w-full">
+            <app-breadcrumb></app-breadcrumb>
+        </div>
+        <div class="content p-3">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</section>

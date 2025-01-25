@@ -1,0 +1,9 @@
+.menu{
+    box-shadow: 0 2px 10px 0 rgba(25, 26, 28, 0.12);
+    background-color: #f8fafc !important;
+    z-index: 1;
+}
+::ng-deep .p-card .p-card-body{
+    border-radius: 8px !important;
+    box-shadow: 0 2px 10px 0 rgba(25, 26, 28, 0.12) !important;
+}

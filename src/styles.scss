@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+body{
+    margin: 0;
+    background-color: #f8fafc;
+}
+
+// BUTTONS
+.btn.btn-main{
+    background: #A87DE6;
+    border: 1px solid #A87DE6;
+    margin:5px;
+    border-radius: 50px;
+}
+.btn-white button{
+    background: #fff;
+    color: #A87DE6;
+}
+
+// ALERTS
+.alert-message-danger {
+    color: red;
+    margin-top: 5px;
+}
+
+// INPUT
+.p-inputtext.ng-invalid.ng-touched{
+    border-color: red;
+}
+
+// ICONS
+.p-breadcrumb .p-breadcrumb-list li .p-menuitem-link .p-menuitem-icon,
+.p-breadcrumb .p-breadcrumb-list li.p-menuitem-separator{
+    color: #A87DE6;
+}
+// .purple{
+//     color: #A87DE6;
+// }

@@ -1,0 +1,37 @@
+
+<section class="containerLogin">
+    <div class="flex" style="height: 100vh;margin-bottom: -0.5rem;">
+        <div class="col-6 p-0" style="background:#A87DE6;position: relative;box-shadow: 10px 0px 5px #A87DE6">
+            <div class="barras" style="background: repeating-linear-gradient(to left, #B189E9 0, #B189E9 20px, #A87DE6 20px, #A87DE6 40px);height: 100vh;"></div>
+            <div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);text-align: center;">
+                <img src="../../assets/images/logo.png" alt="logo" style="width: 100%">
+            </div>
+        </div>
+        <div class="col-6" style="display: flex;justify-content: center;align-items: center;flex-direction: column;background: #FF9BEF;position: relative;">
+            <div style="z-index:1;background-color: #fff;padding: 50px 100px;border-radius: 15px;box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .5);border: 2px solid #A87DE6;">
+                <h1 style="color:#9246E6;font-size: 32px;margin:0">Gestión administrativa</h1>
+                <p style="text-align: center;margin: 0;margin-bottom: 24px;font-weight: 600;color:#273458">by Dianita Gómez</p>
+                <form [formGroup]="loginForm">
+                    <div class="p-field" style="margin-bottom: 16px;text-align: center;">
+                      <input pInputText  id="username" formControlName="username" placeholder="Username" class="w-full"/>
+                      <div *ngIf="isFieldInvalid('username')" class="alert-message-danger text-left">
+                        Campo obligatorio
+                      </div>
+                    </div>
+                    <div class="p-field" style="margin-bottom: 16px;text-align: center;">
+                      <input pInputText  id="password" formControlName="password" placeholder="Contraseña" class="w-full"/>
+                      <div *ngIf="isFieldInvalid('password')" class="alert-message-danger text-left">
+                        Campo obligatorio
+                      </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <button pButton pRipple class="btn btn-main" type="button" label="Iniciar Sesión" (click)="login()" [disabled]="loginForm.invalid"></button>
+                    </div>
+                </form>
+            </div>
+            <img src="../../assets/images/fondo1.png" alt="" style="position: absolute;bottom: 0;right: 0;z-index: 0;">
+            <img src="../../assets/images/fondo2.png" alt="" style="position: absolute;top: 0;left: 0;z-index: 0;">
+        </div>
+    </div>
+</section>
+  
